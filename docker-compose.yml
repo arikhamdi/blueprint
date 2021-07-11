@@ -15,6 +15,7 @@ services:
   gunicorn:
     build:
       context: .
+      dockerfile: Dockerfile
       args:
         PIP_REQUIREMENTS: "${PIP_REQUIREMENTS}"
     command: bash -c "/home/blueprint/env/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 blueprint.wsgi:application"

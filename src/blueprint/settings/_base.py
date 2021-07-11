@@ -164,7 +164,7 @@ with open(BASE_DIR / 'settings/last-update.txt' , 'r') as f:
     timestamp = f.readline().strip()
 
 
-STATIC_URL = f'/static/{timestamp}'
+STATIC_URL = f'/static/{timestamp}/'
 
 STATICFILES_DIRS = [
  BASE_DIR / 'site_static',

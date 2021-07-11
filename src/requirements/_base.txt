@@ -1,6 +1,2 @@
 Django~=3.2.5
-djangorestframework
-gunicorn
-psycopg2-binary
-pytz
-sqlparse
+djangorestframework==3.11.0
